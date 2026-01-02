@@ -12,7 +12,7 @@ export const CURRENCY = "IDR";
 // Link (opsional)
 export const LINKS = {
   // Jika mau aman, kosongkan dan kembalikan link via endpoint server setelah pembayaran.
-  resellerGroupFallback: "https://t.me/+dA8elHyzEGw5MTE1", // contoh: "https://chat.whatsapp.com/XXXXX"
+  resellerGroupFallback: "", // contoh: "https://chat.whatsapp.com/XXXXX"
 };
 
 // Produk & harga (edit bebas)
@@ -34,69 +34,16 @@ export const PRODUCTS = [
       { key: "panel-8gb", label: "8GB", ramGb: 8, cores: null, price: 7000, badge: "Popular" },
       { key: "panel-9gb", label: "9GB", ramGb: 9, cores: null, price: 8000, badge: "Popular" },
       { key: "panel-10gb", label: "10GB", ramGb: 10, cores: null, price: 10000, badge: "Popular" },
-      { key: "panel-unlimited", label: "UNLIMITED", ramGb: 0, cores: null, price: 12000, badge: "Request" },
+      { key: "panel-11gb", label: "11GB", ramGb: 11, cores: null, price: 11000, badge: "Popular" },
+      { key: "panel-12gb", label: "12GB", ramGb: 12, cores: null, price: 12000, badge: "Popular" },
+      { key: "panel-13gb", label: "13GB", ramGb: 13, cores: null, price: 13000, badge: "Terlangka" },
+      { key: "panel-14gb", label: "14GB", ramGb: 14, cores: null, price: 14000, badge: "Terlaris" },
+      { key: "panel-unlimited", label: "UNLIMITED", ramGb: 0, cores: null, price: 15000, badge: "Request" },
     ],
     notes: [
       "Unlimited (ram=0) = request-based (bukan RAM tak terbatas secara fisik).",
       "Resource menyesuaikan kapasitas server & kebijakan fair use.",
     ],
-  },
-
-  {
-    key: "admin",
-    title: "Admin Panel Pterodactyl",
-    subtitle: "Akses admin untuk panel (high privilege).",
-    icon: "admin",
-    requires: { name: true, hostname: false },
-    plans: [
-      { key: "admin-access", label: "Admin Access", ramGb: null, cores: null, price: 15000, badge: "Admin" },
-    ],
-    notes: [
-      "Masukkan username/nama target admin dengan benar.",
-      "Produk ini high privilege — pastikan data benar.",
-    ],
-  },
-
-  {
-    key: "OWNER",
-    title: "Owner Panel Pterodactyl",
-    subtitle: "Akses Owner untuk panel (high privilege).",
-    icon: "admin",
-    requires: { name: true, hostname: false },
-    plans: [
-      { key: "owner-access", label: "Owner Access", ramGb: null, cores: null, price: 20000, badge: "Owner" },
-    ],
-    notes: [
-      "Masukkan username/nama target Owner dengan benar.",
-      "Kalau membeli owner panel langsung ke telegram @MYARMUFASTORE Serta bukti pembayaran",
-    ],
-  },
-  
-  {
-    key: "PARTNER",
-    title: "Partner Panel Pterodactyl",
-    subtitle: "Akses Partner untuk panel (high privilege).",
-    icon: "admin",
-    requires: { name: true, hostname: false },
-    plans: [
-      { key: "partner-access", label: "Owner Access", ramGb: null, cores: null, price: 18000, badge: "Partner" },
-    ],
-    notes: [
-      "Masukkan username/nama target Partner dengan benar.",
-      "Kalau membeli Partner panel langsung ke telegram @MYARMUFASTORE Serta bukti pembayaran",
-    ],
-  },
-  
-  {
-    key: "reseller",
-    title: "Reseller Panel Pterodactyl",
-    subtitle: "Akses reseller + link khusus setelah pembayaran.",
-    icon: "reseller",
-    requires: { name: false, hostname: false },
-    plans: [
-      { key: "reseller-access", label: "Reseller Access", ramGb: null, cores: null, price: 14000, badge: "Reseller" },
-    ],
-    notes: ["Setelah pembayaran sukses, kamu akan mendapat link khusus reseller."],
   },
 ];
 
